@@ -1,0 +1,211 @@
+/* Custom styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    max-width: 1440px;
+}
+
+/* Mobile styles */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: white;
+}
+
+/* Header styles */
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+/* Header logo styles */
+
+.logo {
+    padding: 2%;
+}
+
+.logo a {
+    font-size: 26px;
+    text-decoration: none;
+    color: coral;
+    font-weight: lighter;
+}
+
+.logo span {
+    opacity: 0.5;
+}
+
+/* Header navbar styles */
+
+.header__navbar {
+    padding-bottom: 2%;
+}
+
+.navbar__links li {
+    text-align: center;
+    word-spacing: 5px;
+    padding: 3px;
+    list-style: none;
+}
+
+.navbar__links a{
+    text-decoration: none;
+    color: grey;
+}
+
+/* Main styles */
+
+/*.main__wrapper {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: nowrap;*/
+/*    justify-content: flex-start;*/
+/*    align-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/* Main banner img */
+
+.main__banner img {
+    width: 100%;
+    height: 40vh;
+}
+
+/* Main features */
+
+.main__features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    gap: 1%;
+    padding: 2%;
+}
+
+/* Main portfolio, work, social */
+
+.features__portfolio img, .features__work img, .features__social img {
+    width: 100%;
+}
+
+.features__portfolio h2, .features__work h2, .features__social h2 {
+    color: coral;
+    text-align: center;
+}
+
+.features__portfolio p, .features__work p, .features__social p {
+    color: grey;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+.features__portfolio a, .features__work a, .features__social a {
+    text-decoration: none;
+    color: white;
+    background: coral;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+/* Main works */
+
+.main__works h2 {
+    color: coral;
+    text-align: left;
+    padding: 5% 0 5% 2%;
+}
+
+.designs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+/*.main__works div {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: nowrap;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.main__works h3 {
+    color: grey;
+    padding: 5%;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.main__works p {
+    color: coral;
+    text-align: left;
+    padding: 0 0 5% 5%;
+}
+
+.border {
+    border: 2px solid lightgray;
+}
+
+.first__design, .second__design, .third__design, .fourth__design {
+    margin-bottom: 10%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        background: yellow;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        background: red;
+    }
+}

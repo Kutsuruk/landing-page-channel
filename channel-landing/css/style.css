@@ -92,15 +92,6 @@ body {
 
 /* Main styles */
 
-/*.main__wrapper {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    flex-wrap: nowrap;*/
-/*    justify-content: flex-start;*/
-/*    align-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
 /* Main banner img */
 
 .main__banner img {
@@ -123,22 +114,30 @@ body {
 
 /* Main portfolio, work, social */
 
-.features__portfolio, .features__work, .features__social {
+.features__portfolio,
+.features__work,
+.features__social {
     padding: 2%;
 }
 
-.features__portfolio img, .features__work img, .features__social img {
+.features__portfolio img,
+.features__work img,
+.features__social img {
     width: 100%;
 }
 
-.features__portfolio h2, .features__work h2, .features__social h2 {
+.features__portfolio h2,
+.features__work h2,
+.features__social h2 {
     color: coral;
     text-align: center;
     padding: 10% 0 10% 0;
     font-size: 20px;
 }
 
-.features__portfolio p, .features__work p, .features__social p {
+.features__portfolio p,
+.features__work p,
+.features__social p {
     color: grey;
     padding-top: 5%;
     padding-bottom: 10%;
@@ -146,11 +145,15 @@ body {
     line-height: 25px;
 }
 
-.cog, .check, .user {
+.cog,
+.check,
+.user {
     padding-right: 6%;
 }
 
-.features__portfolio a, .features__work a, .features__social a {
+.features__portfolio a,
+.features__work a,
+.features__social a {
     text-decoration: none;
     color: white;
     background: coral;
@@ -198,7 +201,10 @@ body {
     border: 2px solid lightgray;
 }
 
-.first__design, .second__design, .third__design, .fourth__design {
+.first__design,
+.second__design,
+.third__design,
+.fourth__design {
     margin-bottom: 10%;
 }
 
@@ -215,12 +221,17 @@ body {
     background-color: coral;
 }
 
-.about__section, .twitter__section, .contact__section {
+/* Footer about section style */
+
+.about__section,
+.twitter__section,
+.contact__section {
     width: 33.3%;
     padding: 6%;
 }
 
-.about__section h2, .contact__section h2 {
+.about__section h2,
+.contact__section h2 {
     color: #fff;
     padding: 3% 0 3% 0;
 }
@@ -232,6 +243,9 @@ body {
     padding-top: 5%;
     text-align: left;
 }
+
+/* Footer twitter section style */
+
 
 .twitter__section h2 {
     color: #fff;
@@ -256,6 +270,9 @@ body {
     padding-right: 2%;
 }
 
+/* Footer contact section style */
+
+
 .contact__section p {
     color: #fff;
     font-family: sans-serif;
@@ -271,7 +288,6 @@ body {
     justify-content: space-between;
     align-content: center;
     align-items: flex-start;
-    /*width: 50%;*/
 
     padding-top: 3%;
 }
@@ -296,20 +312,80 @@ body {
     color: orangered;
 }
 
+/* Media query styles */
+
 @media (min-width: 768px) {
-    .container {
-        background: yellow;
+    .header__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: flex-start;
+    }
+
+    .logo a {
+        font-size: 60px;
+    }
+
+    .header__navbar {
+        padding: 4.5% 1% 0 0;
+    }
+
+    .navbar__links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+    }
+
+    .designs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: flex-start;
+    }
+
+    .social__images {
+        width: 60%;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        background: red;
+    .navbar__links a:hover {
+        color: coral;
     }
 
-    .features__portfolio a:hover, .features__work a:hover, .features__social a:hover {
+    .cog, .check, .user {
+        font-size: 35px;
+    }
+
+    .features__portfolio a:hover,
+    .features__work a:hover,
+    .features__social a:hover {
         color: coral;
         background-color: white;
         border: 1px solid coral;
+    }
+
+    .portfolio__images,
+    .work__images,
+    .network__images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: flex-start;
+    }
+
+    .portfolio__images img:nth-child(odd),
+    .work__images img:nth-child(odd),
+    .network__images img:nth-child(odd) {
+        padding: 0 3% 0 0;
     }
 }

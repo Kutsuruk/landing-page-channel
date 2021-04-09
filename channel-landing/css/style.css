@@ -41,7 +41,6 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    background: white;
 }
 
 /* Header styles */
@@ -205,7 +204,7 @@ body {
 .second__design,
 .third__design,
 .fourth__design {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 /* Footer styles */
@@ -228,6 +227,16 @@ body {
 .contact__section {
     width: 33.3%;
     padding: 6%;
+}
+
+.feedback__section a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.feedback__section a:hover {
+    text-decoration: none;
+    color: lightgrey;
 }
 
 .about__section h2,
@@ -289,7 +298,7 @@ body {
     align-content: center;
     align-items: flex-start;
 
-    padding-top: 3%;
+    padding-top: 10%;
 }
 
 .social__images a {
@@ -343,11 +352,10 @@ body {
 
     .designs {
         display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .social__images {
@@ -358,6 +366,19 @@ body {
 @media (min-width: 1200px) {
     .navbar__links a:hover {
         color: coral;
+    }
+
+    .navbar__links li {
+        padding-left: 20px;
+    }
+
+    .designs {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
     }
 
     .cog, .check, .user {
